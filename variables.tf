@@ -23,3 +23,30 @@ variable "app_service_name" {
     default = "app-bluegreen"
 
 }
+
+variable "app_service_slot_name" {
+    type = string
+    description = "name of the app service slot"
+    default = "slot-bluegreen"
+}
+
+
+variable "key_vault_name" {
+    type = string
+    description = "name of the key vault"
+    default = "kv-bluegreen"
+}
+
+
+variable "key_vault_secret_name" {
+  description = "The name of the secret to store in Azure Key Vault"
+  type        = string
+  default     = "DbPassword"
+}
+
+variable "key_vault_secret_value" {
+  description = "The value of the secret to store in Azure Key Vault"
+  type        = string
+  sensitive   = true
+  default     = "My$ecureP@ssw0rd"
+}
