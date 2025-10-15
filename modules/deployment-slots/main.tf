@@ -13,6 +13,6 @@ resource "azurerm_app_service_slot" "slot" {
 
 resource "azurerm_app_service_source_control_slot" "scm1" {
   slot_id   = azurerm_app_service_slot.slot.id
-  repo_url = "https://github.com/imsparsh2001/terraform-sample-project.git"
-  branch   = "appServiceSlot_Working_DO_NOT_MERGE"
+  repo_url = "https://github.com/imsparsh2001/green-demo-app.git"
+  branch   = "main"
 }

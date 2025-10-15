@@ -22,9 +22,8 @@ resource "azurerm_app_service" "as" {
 
 }
 
-
 resource "azurerm_app_service_source_control" "scm" {
   app_id   = azurerm_app_service.as.id
-  repo_url = "https://github.com/imsparsh2001/terraform-sample-project.git"
-  branch   = "master"
+  repo_url = "https://github.com/imsparsh2001/blue-demo-app.git"
+  branch   = "main"
 }
